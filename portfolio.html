@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahitha Karnam's Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            animation: fadeInBody 1.5s ease-in-out;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes hoverPulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 0;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            animation: scaleUp 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.25rem;
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: slideInFromBottom 1s ease-in-out;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            animation: scaleUp 0.8s ease-in-out;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #34495e;
+            animation: scaleUp 0.8s ease-in-out;
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: #ecf0f1;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-left: 5px solid #2980b9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInFromBottom 0.8s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        ul li strong {
+            color: #2c3e50;
+        }
+
+        /* Hover Animations for Links */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #1abc9c;
+            transform: scale(1.05);
+            animation: hoverPulse 0.5s ease-in-out;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            animation: fadeInBody 1.5s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            ul li {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mahitha Karnam</h1>
+    <p>Information Technology & Management Specialist</p>
+</header>
+
+<section>
+    <h2>Contact Information</h2>
+    <p>Location: Richardson, Texas, 75080</p>
+    <p>Phone: 945-265-7776</p>
+    <p>Email: <a href="mailto:mxk220105@utdallas.edu">mxk220105@utdallas.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mahitha-karnam-754037199" target="_blank">View Profile</a></p>
+</section>
+
+<section>
+    <h2>About Me</h2>
+    <p>Energetic master's candidate specializing in Information Technology and Management, skilled in utilizing technology for business innovation and enhancing operational efficiency. Seeking opportunities for growth and development in dynamic environments.</p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <ul>
+        <li><strong>The University of Texas at Dallas</strong> (Jan 2022 – Dec 2024)<br>Master of Science, Information Technology and Management | GPA: 3.5</li>
+        <li><strong>Saveetha School of Engineering, Chennai, India</strong> (Aug 2017 – Sep 2021)<br>Bachelor of Engineering, Computer Science and Engineering | GPA: 3.6</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Programming Languages: C, Python, R, SQL</li>
+        <li>Tools: Tableau, Power BI, Anaconda, SAP</li>
+        <li>Techniques: ETL, Data Modeling, Project Management, JIRA, Agile Methodology</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Professional Experience</h2>
+    <h3>HCL Technologies, Bangalore, India (Sep 2021 - Dec 2022)</h3>
+    <ul>
+        <li>Software Engineer working on the Boeing 777x project with Collins Aerospace on Flight Control System.</li>
+        <li>Automated script development, VBT Testing, and structural coverage analysis using Python.</li>
+        <li>Development of fly-by-wire interface software using MATLAB.</li>
+        <li>Closed 50+ JIRA tickets following Agile methodology.</li>
+        <li>Awarded the team's MVP for four sprints.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Academic Projects</h2>
+    <ul>
+        <li><strong>Cost Optimization Analysis</strong> (Apr 2021 - Jul 2021)<br>Reduced computing costs by 33% using a hybrid cloud algorithm.</li>
+        <li><strong>Book Bank Management System</strong> (May 2019 - Oct 2019)<br>Improved book sharing collaboration by 46.7% with a custom database system.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Tableau Projects</h2>
+    <ul>
+        <li><a href="https://public.tableau.com/app/profile/mahitha.karnam/viz/FertilityRatevsLifeExpectancy_17293878972290/Sheet1" target="_blank">Fertility Rate vs Life Expectancy</a></li>
+        <li><a href="https://public.tableau.com/app/profile/mahitha.karnam/viz/Population_17293877345510/Sheet1" target="_blank">Population</a></li>
+        <li><a href="https://public.tableau.com/app/profile/mahitha.karnam/viz/Assignment5-mxk220105/Story1" target="_blank">Grocery Store Analysis</a></li>
+        <li><a href="https://public.tableau.com/app/profile/mahitha.karnam/viz/Tableau-mxk220105/Story1" target="_blank">Connecting Dots Between Natural Disaster and Energy Industry</a></li>
+        <li><a href="https://public.tableau.com/app/profile/mahitha.karnam/viz/Assignment-8_Tableau_mxk220105/Story1" target="_blank">Yield vs Commodity</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mahitha Karnam. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
